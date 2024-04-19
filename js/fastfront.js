@@ -1,10 +1,36 @@
 console.time();
+// CREATING STYLE TAGS
+const colorsHead = document.createElement('STYLE');
+const style = document.createElement('STYLE');
+const medias = document.createElement('STYLE');
+const hovers = document.createElement('STYLE');
+
+
 const colors = {
     white: '#FFFFFF',
     black: '#000',
     yellow: '#FF5B27',
     purple: '#A60EDB'
 }
+
+
+const colour =  (colour, value) => {
+    const opacity = Math.floor(0.1 * value * 255).toString(16);
+    return colour + opacity;
+};
+
+
+Object.keys(colors).forEach((key) => {
+    const color = colors[key];
+    Array.from({length: 10}).reverse().map((i, index) => 10 - index).forEach((item, index) => {
+        if(index){
+            const count = index * 100;
+            const newCey =  `${key}-${count}`;
+            colorsHead.innerHTML = `${colorsHead.innerHTML} .c-${newCey} {color: ${colour(color, index)} !important}`;
+            colorsHead.innerHTML = `${colorsHead.innerHTML} .bgc-${newCey} {background-color: ${colour(color, index)} !important}`;
+        }
+    })
+})
 
 
 const randomText = () => (Math.random() + 1).toString(36).substring(7);
@@ -21,6 +47,7 @@ const costs = {
     paddingY: 'py-',
     flexGap: 'gap-',
     colPercent: 'colPercent-',
+    borderWidth: 'bWidth-',
 }
 const allElem = document.querySelectorAll('*');
 const head = document.head;
@@ -56,6 +83,7 @@ const classTypes = [
     // FONT SIZE
     {minClass: 'fs-', styleName: 'font-size'},
     {minClass: 'br-', styleName: 'border-radius'},
+    {minClass: costs.borderWidth, styleName: 'border-width'},
     {minClass: 'roundLeftTop-', styleName: 'border-top-left-radius'},
     {minClass: 'roundLeftBottom-', styleName: 'border-bottom-left-radius'},
     {minClass: 'roundRightBottom-', styleName: 'border-bottom-right-radius'},
@@ -85,10 +113,6 @@ if (typeof colors === 'undefined') {
     document.head.appendChild(script)
 }
 
-// CREATING STYLE TAGS
-const style = document.createElement('STYLE');
-const medias = document.createElement('STYLE');
-const hovers = document.createElement('STYLE');
 
 allElem.forEach((item) => {
     item.classList.forEach((className) => {
@@ -204,8 +228,10 @@ function chekWork(className) {
     return className.includes('!') ? '!' : className.includes('%') ? '%' : '';
 }
 
+head.appendChild(colorsHead);
 head.appendChild(style);
 head.appendChild(medias);
 head.appendChild(hovers);
 
 console.timeEnd()
+

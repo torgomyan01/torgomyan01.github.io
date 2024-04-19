@@ -319,6 +319,7 @@ body {
   transition: 0.2s linear;
 }
 .menu.active {
+  height: 60px;
   border-radius: 100px;
   border: 1px solid #FFF;
   background: rgba(255, 255, 255, 0.25);
@@ -334,8 +335,8 @@ body {
   }
 }
 .menu.active .logo {
-  transform: scale(0.8);
-  top: 43px !important;
+  transform: scale(0.6);
+  top: 33px !important;
 }
 .menu .menu-item2 {
   display: none;

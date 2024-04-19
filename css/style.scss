@@ -306,6 +306,7 @@ body{
     transition: .2s linear;
   }
   &.active{
+    height: 60px;
     border-radius: 100px;
     border: 1px solid #FFF;
     background: rgba(255, 255, 255, 0.25);
@@ -318,8 +319,8 @@ body{
       backdrop-filter: blur(17.5px);
     }
     .logo{
-      transform: scale(.8);
-      top: 43px !important;
+      transform: scale(0.6);
+      top: 33px !important;
     }
   }
   .menu-item2{
