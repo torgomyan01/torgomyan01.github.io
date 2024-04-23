@@ -314,9 +314,10 @@ body {
   justify-content: center;
   background: transparent;
   z-index: 1000;
+  transition: 0.3s;
 }
 .menu .logo {
-  transition: 0.2s linear;
+  transition: 0.3s;
 }
 .menu.active {
   height: 60px;
@@ -923,7 +924,7 @@ header .col-box .green.no-trans {
 }
 
 .preparation {
-  margin-top: 10.3125rem;
+  margin-top: 8.3125rem;
 }
 @media (max-width: 576px) {
   .preparation {

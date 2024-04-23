@@ -302,8 +302,9 @@ body{
   justify-content: center;
   background: transparent;
   z-index: 1000;
+  transition: 0.3s;
   .logo{
-    transition: .2s linear;
+    transition: 0.3s;
   }
   &.active{
     height: 60px;
@@ -933,7 +934,7 @@ header{
 // Preparation
 
 .preparation{
-  margin-top: 10.3125rem;
+  margin-top: 8.3125rem;
   @media (max-width: 576px) {
     margin-top: 5rem;
   }
