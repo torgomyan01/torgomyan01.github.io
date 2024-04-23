@@ -588,7 +588,7 @@ header{
     }
     .heading-header{
       color: #000;
-      font-size: 3.4375rem;
+      font-size: 3rem;
       font-weight: 600;
       line-height: 3.875rem; /* 120% */
       letter-spacing: 2.4px;
@@ -596,6 +596,11 @@ header{
       @media (max-width: 576px) {
         font-size: 2.5rem;
         line-height: 3rem;
+      }
+      &.header_subtitle{
+        font-size: 1.875rem;
+        line-height: normal;
+        text-transform: unset;
       }
     }
 

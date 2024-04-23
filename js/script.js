@@ -498,13 +498,22 @@ const Works = [
 ];
 
 
-const works_row = document.querySelector('#works-row')
+const works_row = document.querySelector('#works-row');
+let worksPageCount = 6;
 
-Works.forEach((elem => {
-    works_row.insertAdjacentHTML('beforeend', PrintWorks(elem))
+function startAppendWorks(array){
+    works_row.innerHTML = '';
+    array.slice(0, worksPageCount).forEach((elem => {
+        works_row.insertAdjacentHTML('beforeend', PrintWorks(elem))
+    }))
+}
 
-}))
+startAppendWorks(Works);
 
+$('.see-more').on('click', function (){
+    worksPageCount += 6;
+    startAppendWorks(Works);
+})
 
 function PrintWorks(elem) {
     return (
@@ -514,15 +523,12 @@ function PrintWorks(elem) {
               <div class="works-box-pages-link">
                 <a class="github-link" href="#">${elem.name}</a>
                 <div class="link-box overflow-y-auto">
-                ${elem.links.map((link) => `<a class="link" target="_blank" href="${link.url}">${link.name}</a>`).join(' ')}
-                 
-              
+                  ${elem.links.map((link) => `<a class="link" target="_blank" href="${link.url}">${link.name}</a>`).join(' ')}
                 </div>
                 <p class="page-about">${elem.created}</p>
               </div>
             </div>
           </div>
-
 `
     )
 }

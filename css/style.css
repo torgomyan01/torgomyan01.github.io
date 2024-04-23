@@ -599,7 +599,7 @@ header .col-box {
 }
 header .col-box .heading-header {
   color: #000;
-  font-size: 3.4375rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 3.875rem; /* 120% */
   letter-spacing: 2.4px;
@@ -610,6 +610,11 @@ header .col-box .heading-header {
     font-size: 2.5rem;
     line-height: 3rem;
   }
+}
+header .col-box .heading-header.header_subtitle {
+  font-size: 1.875rem;
+  line-height: normal;
+  text-transform: unset;
 }
 header .col-box .header-subtitle {
   color: #000;
