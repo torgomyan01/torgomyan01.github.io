@@ -172,7 +172,7 @@ body {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(7.5px);
   margin: 115px auto 150px auto;
-  padding: 0 0 280px 0;
+  padding: 0 0 180px 0;
   position: relative;
 }
 @media (max-width: 576px) {
@@ -182,7 +182,7 @@ body {
 }
 
 .container {
-  max-width: 984px;
+  max-width: 1024px;
   width: 100%;
 }
 @media (max-width: 768px) {
@@ -257,8 +257,8 @@ body {
 .dropdown-flag-body {
   background: transparent;
   position: fixed;
-  right: 0;
-  top: 0;
+  right: 20px;
+  top: 10px;
   z-index: 20000;
   list-style: none;
 }
@@ -291,15 +291,16 @@ body {
 }
 .dropdown-flag-body .dropdown-menu {
   background: transparent;
-  width: 20px !important;
-  inset: -1px -97px auto auto !important;
   height: auto;
+  min-width: 83px;
 }
 .dropdown-flag-body .dropdown-menu img {
-  display: block;
   width: 25px;
-  margin: 10px;
+  margin-top: 10px;
   cursor: pointer;
+}
+.dropdown-flag-body .dropdown-menu li {
+  text-align: center;
 }
 
 .menu {
@@ -620,7 +621,7 @@ header .col-box .heading-header.header_subtitle {
 header .col-box .header-subtitle {
   color: #000;
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (max-width: 576px) {
   header .col-box .header-subtitle {
