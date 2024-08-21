@@ -485,7 +485,7 @@ const Works = [
                 url: 'https://54-agency-test.vercel.app/'
             }
         ],
-        created: 'HTML CSS JS BOOTSTRAP JS'
+        created: 'React JS'
     },
     {
         name: "YTSMp3.org",
@@ -496,7 +496,7 @@ const Works = [
                 url: 'www.ytsmp3.org'
             }
         ],
-        created: 'HTML CSS JS BOOTSTRAP JS'
+        created: 'Next.js'
     },
     {
         name: "Kampus",
@@ -531,7 +531,7 @@ const Works = [
                 url: 'https://kampus-six.vercel.app/my-resume'
             }
         ],
-        created: 'HTML CSS JS BOOTSTRAP JS'
+        created: 'React JS'
     },
     {
         name: "RosMigrant",
