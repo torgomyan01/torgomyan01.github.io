@@ -166,7 +166,7 @@ const Works = [
         links: [
             {
                 name: 'index.html',
-                url: 'https://armanpinachyan.github.io/Sdney/'
+                url: 'https://torgomyan01.github.io/sydney/'
             }
         ],
         created: 'HTML CSS JS'
@@ -177,7 +177,7 @@ const Works = [
         links: [
             {
                 name: 'index.html',
-                url: 'https://armanpinachyan.github.io/empower-prospe/'
+                url: 'https://torgomyan01.github.io/empower-prosper/'
             }
         ],
         created: 'HTML CSS JS'
@@ -188,47 +188,47 @@ const Works = [
         links: [
             {
                 name: 'index.html',
-                url: 'https://armanpinachyan.github.io/Aniox/'
+                url: 'https://torgomyan01.github.io/ainox/'
             },
             {
                 name: 'confirm-email.html',
-                url: 'https://armanpinachyan.github.io/Aniox/confirm-email.html'
+                url: 'https://torgomyan01.github.io/ainox/confirm-email.html'
             },
             {
                 name: 'email.html',
-                url: 'https://armanpinachyan.github.io/Aniox/email.html'
+                url: 'https://torgomyan01.github.io/ainox/email.html'
             },
             {
                 name: 'finish.html',
-                url: 'https://armanpinachyan.github.io/Aniox/finish.html'
+                url: 'https://torgomyan01.github.io/ainox/finish.html'
             },
             {
                 name: 'login.html',
-                url: 'https://armanpinachyan.github.io/Aniox/login.html'
+                url: 'https://torgomyan01.github.io/ainox/login.html'
             },
             {
                 name: 'new-ticket.html',
-                url: 'https://armanpinachyan.github.io/Aniox/new-ticket.html'
+                url: 'https://torgomyan01.github.io/ainox/new-ticket.html'
             },
             {
                 name: 'robo.html',
-                url: 'https://armanpinachyan.github.io/Aniox/robo.html'
+                url: 'https://torgomyan01.github.io/ainox/robo.html'
             },
             {
                 name: 'steps.html',
-                url: 'https://armanpinachyan.github.io/Aniox/steps.html'
+                url: 'https://torgomyan01.github.io/ainox/steps.html'
             },
             {
                 name: 'ticket.html',
-                url: 'https://armanpinachyan.github.io/Aniox/ticket.html'
+                url: 'https://torgomyan01.github.io/ainox/ticket.html'
             },
             {
                 name: 'ticket-message.html',
-                url: 'https://armanpinachyan.github.io/Aniox/ticket-message.html'
+                url: 'https://torgomyan01.github.io/ainox/ticket-message.html'
             },
             {
                 name: 'trial.html',
-                url: 'https://armanpinachyan.github.io/Aniox/trial.html'
+                url: 'https://torgomyan01.github.io/ainox/trial.html'
             },
 
 
@@ -241,7 +241,7 @@ const Works = [
         links: [
             {
                 name: 'index.html',
-                url: 'https://armanpinachyan.github.io/Lagom/'
+                url: 'https://torgomyan01.github.io/lagom/'
             }
 
         ],
@@ -253,7 +253,7 @@ const Works = [
         links: [
             {
                 name: 'index.html',
-                url: 'https://armanpinachyan.github.io/Arthall-Synergy/'
+                url: 'https://torgomyan01.github.io/Arthall-Synergy/'
             }
 
         ],
@@ -265,7 +265,7 @@ const Works = [
         links: [
             {
                 name: 'index.html',
-                url: 'https://armanpinachyan.github.io/Artel/'
+                url: 'https://torgomyan01.github.io/artel/'
             }
 
         ],
@@ -350,27 +350,27 @@ const Works = [
         links: [
             {
                 name: 'index.html',
-                url: 'https://armanpinachyan.github.io/easyCard/'
+                url: 'https://torgomyan01.github.io/easycards/'
             },
             {
                 name: 'bakai-card.html',
-                url: 'https://armanpinachyan.github.io/easyCard/bakai-card.html'
+                url: 'https://torgomyan01.github.io/easycards/bakai-card.html'
             },
             {
                 name: 'freedom-card.html',
-                url: 'https://armanpinachyan.github.io/easyCard/freedom-card.html'
+                url: 'https://torgomyan01.github.io/easycards/freedom-card.html'
             },
             {
                 name: 'kazakhstan.html',
-                url: 'https://armanpinachyan.github.io/easyCard/kazakhstan.html'
+                url: 'https://torgomyan01.github.io/easycards/kazakhstan.html'
             },
             {
                 name: 'kirghizia.html',
-                url: 'https://armanpinachyan.github.io/easyCard/kirghizia.html'
+                url: 'https://torgomyan01.github.io/easycards/kirghizia.html'
             },
             {
                 name: 'optimal-card.html',
-                url: 'https://armanpinachyan.github.io/easyCard/optimal-card.html'
+                url: 'https://torgomyan01.github.io/easycards/optimal-card.html'
             },
         ],
         created: 'HTML CSS JS JQUERY AOS-JS'
@@ -452,15 +452,15 @@ const Works = [
         links: [
             {
                 name: 'index.html',
-                url: 'https://armanpinachyan.github.io/Kupon/'
+                url: 'https://torgomyan01.github.io/kupon/'
             },
             {
                 name: 'product.html',
-                url: 'https://armanpinachyan.github.io/Kupon/product.html'
+                url: 'https://torgomyan01.github.io/kupon/product.html'
             },
             {
                 name: 'sale.html',
-                url: 'https://armanpinachyan.github.io/Kupon/sale.html'
+                url: 'https://torgomyan01.github.io/kupon/sale.html'
             },
         ],
         created: 'HTML CSS JS BOOTSTRAP'
@@ -472,6 +472,63 @@ const Works = [
             {
                 name: 'index.html',
                 url: 'https://torgomyan01.github.io/neuron/'
+            }
+        ],
+        created: 'HTML CSS JS BOOTSTRAP JS'
+    },
+    {
+        name: "54 Agency",
+        imgUrl: 'images/54-agensy.png',
+        links: [
+            {
+                name: 'index.html',
+                url: 'https://54-agency-test.vercel.app/'
+            }
+        ],
+        created: 'HTML CSS JS BOOTSTRAP JS'
+    },
+    {
+        name: "YTSMp3.org",
+        imgUrl: 'images/ytsmp3.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'www.ytsmp3.org'
+            }
+        ],
+        created: 'HTML CSS JS BOOTSTRAP JS'
+    },
+    {
+        name: "Kampus",
+        imgUrl: 'images/kampus.png',
+        links: [
+            {
+                name: 'Login',
+                url: 'https://kampus-six.vercel.app'
+            },
+            {
+                name: 'Dashboard',
+                url: 'https://kampus-six.vercel.app/dashboard'
+            },
+            {
+                name: 'Program Fonds',
+                url: 'https://kampus-six.vercel.app/program-fonds'
+            },
+            {
+                name: 'Analytics',
+                url: 'https://kampus-six.vercel.app/analytic_users'
+            },
+            {
+                name: 'List Universities',
+                url: 'https://kampus-six.vercel.app/list-universities'
+            },
+            {
+                name: 'Rating Users',
+                url: 'https://kampus-six.vercel.app/rating_users'
+            },
+            {
+                name: 'My Resume',
+                url: 'https://kampus-six.vercel.app/my-resume'
             }
         ],
         created: 'HTML CSS JS BOOTSTRAP JS'
