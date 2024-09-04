@@ -140,7 +140,7 @@ body{
 }
 
 .layer:after {
-  font: 150px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+  font: 9.375rem/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
   content: 'Torgomyan.Studio';
   white-space: pre;
   text-align: center;
@@ -151,6 +151,13 @@ body{
   color: darken(#fff, 4%);
   letter-spacing: -2px;
   text-shadow: 4px 0 10px hsla(0, 0%, 0%, .13);
+
+  @media (max-width: 1024px){
+    font-size: 6rem;
+  }
+  @media (max-width: 767px){
+    font-size: 3rem;
+  }
 }
 
 $i: 1;
