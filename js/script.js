@@ -10,7 +10,9 @@ const {
 
 const getSavedLanguage = localStorage.getItem(countryCode);
 
-AOS.init();
+AOS.init({
+    duration: 1000
+});
 
 (
     $('.imgs').removeClass(active),
@@ -50,8 +52,18 @@ const yellowMobile = document.querySelector('.yellow-mobile');
 const greenMobile = document.querySelector('.green-mobile');
 const purpleMobile = document.querySelector('.purple-mobile');
 const changeLanguage = document.querySelectorAll('.change-language');
+const preloader = document.querySelector('.preloader');
 
 window.onload = () => {
+    setTimeout(() => {
+        preloader.style.opacity = '0';
+        preloader.style.visibility = 'hidden';
+
+        setTimeout(() => {
+            preloader.outerHTML = '';
+        }, 1000)
+    }, 6000)
+
     setTimeout(() => {
         yellow.classList.add('active')
         green.classList.add('active')
@@ -673,73 +685,79 @@ $('.slider').slick({
 
 
 let $canvas = $('#blob canvas'),
-    canvas = $canvas[0],
-    renderer = new THREE.WebGLRenderer({
-        canvas: canvas,
-        context: canvas.getContext('webgl2'),
-        antialias: true,
-        alpha: true
-    }),
-    simplex = new SimplexNoise();
+    canvas = $canvas[0];
+let renderer;
+  if(canvas){
+        renderer = new THREE.WebGLRenderer({
+            canvas: canvas,
+            context: canvas.getContext('webgl2'),
+            antialias: true,
+            alpha: true
+        }),
+        simplex = new SimplexNoise();
+      renderer.setSize($canvas.width(), $canvas.height());
+      renderer.setPixelRatio(window.devicePixelRatio || 1);
 
-renderer.setSize($canvas.width(), $canvas.height());
-renderer.setPixelRatio(window.devicePixelRatio || 1);
+      let scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(45, $canvas.width() / $canvas.height(), 0.1, 1000);
 
-let scene = new THREE.Scene();
-camera = new THREE.PerspectiveCamera(45, $canvas.width() / $canvas.height(), 0.1, 1000);
+      camera.position.z = 5;
 
-camera.position.z = 5;
+      let geometry = new THREE.SphereGeometry(.8, 128, 128);
 
-let geometry = new THREE.SphereGeometry(.8, 128, 128);
+      let material = new THREE.MeshPhongMaterial({
+          color: 0xA60EDB,
+          shininess: 100,
+          opacity: 0.8
+      });
 
-let material = new THREE.MeshPhongMaterial({
-    color: 0xA60EDB,
-    shininess: 100,
-    opacity: 0.8
-});
+      let lightTop = new THREE.DirectionalLight(0xFFFFFF, .7);
+      lightTop.position.set(0, 500, 200);
+      lightTop.castShadow = true;
+      scene.add(lightTop);
 
-let lightTop = new THREE.DirectionalLight(0xFFFFFF, .7);
-lightTop.position.set(0, 500, 200);
-lightTop.castShadow = true;
-scene.add(lightTop);
+      let lightBottom = new THREE.DirectionalLight(0xFF5FFF, .25);
+      lightBottom.position.set(0, -500, 400);
+      lightBottom.castShadow = true;
+      scene.add(lightBottom);
 
-let lightBottom = new THREE.DirectionalLight(0xFF5FFF, .25);
-lightBottom.position.set(0, -500, 400);
-lightBottom.castShadow = true;
-scene.add(lightBottom);
+      let ambientLight = new THREE.AmbientLight(0x798296);
+      scene.add(ambientLight);
 
-let ambientLight = new THREE.AmbientLight(0x798296);
-scene.add(ambientLight);
+      let sphere = new THREE.Mesh(geometry, material);
 
-let sphere = new THREE.Mesh(geometry, material);
+      scene.add(sphere);
 
-scene.add(sphere);
 
-let update = () => {
+      let update = () => {
 
-    let time = performance.now() * 0.0005,
-        spikes = 0.75;
+          let time = performance.now() * 0.0005,
+            spikes = 0.75;
 
-    for (let i = 0; i < sphere.geometry.vertices.length; i++) {
-        let p = sphere.geometry.vertices[i];
-        p.normalize().multiplyScalar(1 + 0.3 * simplex.noise3D(p.x * spikes, p.y * spikes, p.z * spikes + time));
-    }
+          for (let i = 0; i < sphere.geometry.vertices.length; i++) {
+              let p = sphere.geometry.vertices[i];
+              p.normalize().multiplyScalar(1 + 0.3 * simplex.noise3D(p.x * spikes, p.y * spikes, p.z * spikes + time));
+          }
 
-    sphere.geometry.computeVertexNormals();
-    sphere.geometry.normalsNeedUpdate = true;
-    sphere.geometry.verticesNeedUpdate = true;
+          sphere.geometry.computeVertexNormals();
+          sphere.geometry.normalsNeedUpdate = true;
+          sphere.geometry.verticesNeedUpdate = true;
 
+      }
+
+      function animate() {
+          // sphere.rotation.x += 0.01;
+          // sphere.rotation.y += 0.01;
+          update();
+          renderer.render(scene, camera);
+          requestAnimationFrame(animate);
+      }
+
+      requestAnimationFrame(animate);
 }
 
-function animate() {
-    // sphere.rotation.x += 0.01;
-    // sphere.rotation.y += 0.01;
-    update();
-    renderer.render(scene, camera);
-    requestAnimationFrame(animate);
-}
 
-requestAnimationFrame(animate);
+
 
 
 // .... language
