@@ -195,6 +195,124 @@ const Works = [
         created: 'HTML CSS JS'
     },
     {
+        name: "Mosco",
+        imgUrl: 'images/Mosco.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/mosco/'
+            },
+            {
+                name: 'Service',
+                url: 'https://torgomyan01.github.io/mosco/Service_and.html'
+            },
+            {
+                name: 'Company',
+                url: 'https://torgomyan01.github.io/mosco/company_and.html'
+            },
+            {
+                name: 'Contact',
+                url: 'https://torgomyan01.github.io/mosco/contact_and.html'
+            },
+            {
+                name: 'News',
+                url: 'https://torgomyan01.github.io/mosco/news_and.html'
+            },
+        ],
+        created: 'HTML CSS JS'
+    },
+    {
+        name: "ZKTeco",
+        imgUrl: 'images/ZKTeco.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://zk-teco-rose.vercel.app/'
+            },
+            {
+                name: 'Blog',
+                url: 'https://zk-teco-rose.vercel.app/blog'
+            },
+            {
+                name: 'Blog Item',
+                url: 'https://zk-teco-rose.vercel.app/blog/1'
+            },
+            {
+                name: 'Contact us',
+                url: 'https://zk-teco-rose.vercel.app/contact-us'
+            },
+            {
+                name: 'Events',
+                url: 'https://zk-teco-rose.vercel.app/events'
+            },
+            {
+                name: 'Events Item',
+                url: 'https://zk-teco-rose.vercel.app/events/1'
+            },
+            {
+                name: 'Job',
+                url: 'https://zk-teco-rose.vercel.app/job'
+            },
+            {
+                name: 'Products',
+                url: 'https://zk-teco-rose.vercel.app/products'
+            },
+            {
+                name: 'Ultima Zkteco',
+                url: 'https://zk-teco-rose.vercel.app/products/ultima-zkteco'
+            },
+            {
+                name: 'Res',
+                url: 'https://zk-teco-rose.vercel.app/res'
+            },
+            {
+                name: 'Solutions',
+                url: 'https://zk-teco-rose.vercel.app/solutions/cirrusdcs-for-hcm'
+            },
+            {
+                name: 'Solutions',
+                url: 'https://zk-teco-rose.vercel.app/solutions/time-track'
+            },
+            {
+                name: 'Ultima',
+                url: 'https://zk-teco-rose.vercel.app/terminals/ultima'
+            },
+            {
+                name: 'us905-series',
+                url: 'https://zk-teco-rose.vercel.app/terminals/us905-series'
+            },
+            {
+                name: 'Why Choose ZKTeco',
+                url: 'https://zk-teco-rose.vercel.app/terminals/why-choose-zkteco'
+            },
+        ],
+        created: 'HTML CSS JS'
+    },
+    {
+        name: "Lagom",
+        imgUrl: 'images/Lagom.png',
+        links: [
+            {
+                name: 'index.html',
+                url: 'https://torgomyan01.github.io/lagom/'
+            }
+
+        ],
+        created: 'HTML CSS SCSS JS jQUERY GSAP'
+    },
+    {
+        name: "Artel",
+        imgUrl: 'images/ARTEL1.png',
+        links: [
+            {
+                name: 'index.html',
+                url: 'https://torgomyan01.github.io/artel/'
+            }
+
+        ],
+        created: 'HTML CSS SCSS JS jQUERY GSAP '
+    },
+    {
         name: "Aniox",
         imgUrl: 'images/Aniox.png',
         links: [
@@ -248,18 +366,6 @@ const Works = [
         created: 'HTML CSS JS'
     },
     {
-        name: "Lagom",
-        imgUrl: 'images/Lagom.png',
-        links: [
-            {
-                name: 'index.html',
-                url: 'https://torgomyan01.github.io/lagom/'
-            }
-
-        ],
-        created: 'HTML CSS SCSS JS jQUERY GSAP'
-    },
-    {
         name: "Arthall-Synergy",
         imgUrl: 'images/ArtHall-Synergy.png',
         links: [
@@ -271,18 +377,7 @@ const Works = [
         ],
         created: 'HTML CSS JS'
     },
-    {
-        name: "Artel",
-        imgUrl: 'images/ARTEL1.png',
-        links: [
-            {
-                name: 'index.html',
-                url: 'https://torgomyan01.github.io/artel/'
-            }
 
-        ],
-        created: 'HTML CSS SCSS JS jQUERY GSAP '
-    },
     {
         name: "RimPlitka",
         imgUrl: 'images/RIM-PLITKA.png',
@@ -582,6 +677,10 @@ startAppendWorks(Works);
 $('.see-more').on('click', function (){
     worksPageCount += 6;
     startAppendWorks(Works);
+
+    if(worksPageCount >= Works.length){
+        $(this).addClass(none)
+    }
 })
 
 function PrintWorks(elem) {
