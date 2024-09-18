@@ -55,14 +55,6 @@ const changeLanguage = document.querySelectorAll('.change-language');
 const preloader = document.querySelector('.preloader');
 
 window.onload = () => {
-    setTimeout(() => {
-        preloader.style.opacity = '0';
-        preloader.style.visibility = 'hidden';
-
-        setTimeout(() => {
-            preloader.outerHTML = '';
-        }, 1000)
-    }, 6000)
 
     setTimeout(() => {
         yellow.classList.add('active')
@@ -170,6 +162,71 @@ menuItemMobileLink.forEach((item) => {
 })
 
 //. Works
+
+const dealkGoUrl = {
+    HOME: '/',
+    FAQ: '/faq',
+    ACHIEVEMENTS: '/achievements',
+    PROFILE_SETTINGS: '/profile-settings',
+    PROFILE: '/profile',
+    VIEW_HISTORY: '/view-history',
+    CATALOG_WARFACE: '/catalog-warface',
+    FINANCE: '/finance',
+    REVIEWS: '/reviews',
+    REVIEWS2: '/reviews2',
+    REF_SYSTEMS: '/ref-systems',
+    POPULAR_CASES: '/popular-cases',
+    GUARANTEES: '/guarantees',
+    RANDOM_ITEM: '/random-item',
+    BOOKMARKS: '/bookmarks',
+    CASE: '/case',
+    MY_MESSAGE: '/my-message',
+    GAME_SELECTION: '/game-selection',
+    NOTIFICATION: '/notification',
+    DRAW: '/draw',
+    ORDER_TABLE: '/order-table',
+    PURCHASES_SALES: '/purchases-sales',
+    CHAT_CUSTOMER: '/chat-customer',
+    SUPPORT: '/support',
+    TOP_USERS: '/top-users',
+    RATING_WARFACE: '/rating-warface',
+    MY_PRODUCTS: '/my-products',
+    CHAT_SELLER: '/chat-seller'
+}
+
+const ciklevkaUrl = [
+    '/',
+    '/actions-subscribe.html',
+    '/calculator.html',
+    '/cards.html',
+    '/certificate.html',
+    '/confirmed-order.html',
+    '/contacts.html',
+    '/for-company.html',
+    '/index.html',
+    '/information.html',
+    '/laying.html',
+    '/modals.html',
+    '/news-1.html',
+    '/news.html',
+    '/our-services.html',
+    '/our-works.html',
+    '/partners.html',
+    '/price-our-works.html',
+    '/product-page.html',
+    '/products.html',
+    '/question.html',
+    '/rent-one-item.html',
+    '/rent.html',
+    '/reviews-pag.html',
+    '/shipping-payment.html',
+    '/shop.html',
+    '/slipper.html',
+    '/tanks-for-contact-me.html',
+    '/thanks-page.html',
+    '/tinting.html',
+    '/tsiklevka.html',
+]
 
 const Works = [
     {
@@ -286,7 +343,7 @@ const Works = [
                 url: 'https://zk-teco-rose.vercel.app/terminals/why-choose-zkteco'
             },
         ],
-        created: 'HTML CSS JS'
+        created: 'React JS, Next.js'
     },
     {
         name: "Lagom",
@@ -311,6 +368,117 @@ const Works = [
 
         ],
         created: 'HTML CSS SCSS JS jQUERY GSAP '
+    },
+    {
+        name: "ArtHall-Synergy Landing ",
+        imgUrl: 'images/ArtHall-Synergy-Landing.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/ArtHall-Synergy-Landing/'
+            }
+
+        ],
+        created: 'HTML CSS SCSS JS'
+    },
+    {
+        name: "Mir Darog",
+        imgUrl: 'images/mir-darog-screen.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://www.mir-darog.ru/'
+            }
+
+        ],
+        created: 'HTML CSS SCSS JS jQUERY'
+    },
+    {
+        name: "Dealkgo",
+        imgUrl: 'images/Dealkgo.png',
+        links: Object.keys(dealkGoUrl).map((item) => {
+            return {
+                        name: item.replace(/_/g, ' '),
+                        url: `https://dealkgo-rho.vercel.app${dealkGoUrl[item]}`
+                    }
+        }),
+        created: 'React JS, TypeScrip, Material UI'
+    },
+    {
+        name: "Web-It",
+        imgUrl: 'images/Web-IQ.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/web-it/'
+            }
+        ],
+        created: 'React JS, TypeScrip, Material UI'
+    },
+    {
+        name: "ԿՈՆՅԱԿ ԵՎ ԿՈՆՅԱԿԻ ՆՎԵՐՆԵՐ",
+        imgUrl: 'images/aygezardi-konyki-gorcaran.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/akg/'
+            },
+            {
+                name: 'Product',
+                url: 'https://torgomyan01.github.io/akg/product.html'
+            },
+            {
+                name: 'Products',
+                url: 'https://torgomyan01.github.io/akg/products.html'
+            }
+        ],
+        created: 'React JS, TypeScrip, Material UI'
+    },
+    {
+        name: "Ciklevka",
+        imgUrl: 'images/Ciklevka.png',
+        links:  [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/adz-motors/'
+            }
+        ],
+        created: 'HTML CSS SCSS JS '
+    },
+    {
+        name: "Adz-motors",
+        imgUrl: 'images/adz-motors.png',
+        links: ciklevkaUrl.map((url) => {
+            return {
+                name: url === '/' ? 'Home' : url.replace(/.html/g, ''),
+                url: `https://torgomyan01.github.io/ciklevka${url}`
+            }
+        }),
+        created: 'HTML CSS SCSS JS '
+    },
+    {
+        name: "MediaCatalog",
+        imgUrl: 'images/MediaCatalog.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/MediaCatalog/'
+            },
+            {
+                name: 'Ads Company',
+                url: 'https://torgomyan01.github.io/MediaCatalog/ads-company.html'
+            },
+            {
+                name: 'Auction',
+                url: 'https://torgomyan01.github.io/MediaCatalog/auction.html'
+            },
+            {
+                name: 'Profile',
+                url: 'https://torgomyan01.github.io/MediaCatalog/profile.html'
+            },
+
+        ],
+        created: 'HTML CSS SCSS JS'
     },
     {
         name: "Aniox",
@@ -372,6 +540,18 @@ const Works = [
             {
                 name: 'index.html',
                 url: 'https://torgomyan01.github.io/Arthall-Synergy/'
+            }
+
+        ],
+        created: 'HTML CSS JS'
+    },
+    {
+        name: "МосСервис",
+        imgUrl: 'images/mosservices.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/santechnik/'
             }
 
         ],
