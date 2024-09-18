@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://torgomyan01.github.io/sitemap.xml
