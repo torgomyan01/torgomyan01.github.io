@@ -230,55 +230,6 @@ const ciklevkaUrl = [
 
 const Works = [
     {
-        name: "Sdney",
-        imgUrl: 'images/Sydney.png',
-        links: [
-            {
-                name: 'index.html',
-                url: 'https://torgomyan01.github.io/sydney/'
-            }
-        ],
-        created: 'HTML CSS JS'
-    },
-    {
-        name: "Empover-Prosper",
-        imgUrl: 'images/Empower-Prosper.png',
-        links: [
-            {
-                name: 'index.html',
-                url: 'https://torgomyan01.github.io/empower-prosper/'
-            }
-        ],
-        created: 'HTML CSS JS'
-    },
-    {
-        name: "Mosco",
-        imgUrl: 'images/Mosco.png',
-        links: [
-            {
-                name: 'Home',
-                url: 'https://torgomyan01.github.io/mosco/'
-            },
-            {
-                name: 'Service',
-                url: 'https://torgomyan01.github.io/mosco/Service_and.html'
-            },
-            {
-                name: 'Company',
-                url: 'https://torgomyan01.github.io/mosco/company_and.html'
-            },
-            {
-                name: 'Contact',
-                url: 'https://torgomyan01.github.io/mosco/contact_and.html'
-            },
-            {
-                name: 'News',
-                url: 'https://torgomyan01.github.io/mosco/news_and.html'
-            },
-        ],
-        created: 'HTML CSS JS'
-    },
-    {
         name: "ZKTeco",
         imgUrl: 'images/ZKTeco.png',
         links: [
@@ -346,6 +297,74 @@ const Works = [
         created: 'React JS, Next.js'
     },
     {
+        name: "Line-Artworks",
+        imgUrl: 'images/line-artworks.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/line-artworks/'
+            },
+            {
+                name: 'Projects',
+                url: 'https://torgomyan01.github.io/line-artworks/projects.html'
+            },
+            {
+                name: 'Studio',
+                url: 'https://torgomyan01.github.io/line-artworks/studio.html'
+            }
+        ],
+        created: 'HTML CSS JS'
+    },
+    {
+        name: "Sdney",
+        imgUrl: 'images/Sydney.png',
+        links: [
+            {
+                name: 'index.html',
+                url: 'https://torgomyan01.github.io/sydney/'
+            }
+        ],
+        created: 'HTML CSS JS'
+    },
+    {
+        name: "Kettik-travel",
+        imgUrl: 'images/kettik-travel.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/Kettik-travel/home.html'
+            }
+        ],
+        created: 'HTML CSS JS'
+    },
+    {
+        name: "Mosco",
+        imgUrl: 'images/Mosco.png',
+        links: [
+            {
+                name: 'Home',
+                url: 'https://torgomyan01.github.io/mosco/'
+            },
+            {
+                name: 'Service',
+                url: 'https://torgomyan01.github.io/mosco/Service_and.html'
+            },
+            {
+                name: 'Company',
+                url: 'https://torgomyan01.github.io/mosco/company_and.html'
+            },
+            {
+                name: 'Contact',
+                url: 'https://torgomyan01.github.io/mosco/contact_and.html'
+            },
+            {
+                name: 'News',
+                url: 'https://torgomyan01.github.io/mosco/news_and.html'
+            },
+        ],
+        created: 'HTML CSS JS'
+    },
+    {
         name: "Lagom",
         imgUrl: 'images/Lagom.png',
         links: [
@@ -368,6 +387,17 @@ const Works = [
 
         ],
         created: 'HTML CSS SCSS JS jQUERY GSAP '
+    },
+    {
+        name: "Empover-Prosper",
+        imgUrl: 'images/Empower-Prosper.png',
+        links: [
+            {
+                name: 'index.html',
+                url: 'https://torgomyan01.github.io/empower-prosper/'
+            }
+        ],
+        created: 'HTML CSS JS'
     },
     {
         name: "ArtHall-Synergy Landing ",
@@ -557,7 +587,6 @@ const Works = [
         ],
         created: 'HTML CSS JS'
     },
-
     {
         name: "RimPlitka",
         imgUrl: 'images/RIM-PLITKA.png',
