@@ -219,6 +219,30 @@ const translateKeys = [
         ru: 'НАМ ДОВЕРЯЮТ',
         en: "English"
     },
+    {
+        key: 'head8',
+        am: `ԿԱՐԾԻՔՆԵՐ`,
+        ru: 'ОТЗЫВЫ',
+        en: "REVIEWS"
+    },
+    {
+        key: 'wp-title',
+        am: `WordPress կայքեր`,
+        ru: 'WordPress Websites',
+        en: "WordPress-сайты"
+    },
+    {
+        key: 'wp-text',
+        am: `
+          Ցանկանում էք WordPress կայքեր: Այցելեք մեր կայք՝ <a href="https://wordpressinfo.org" target="_blank">WordPressInfo.org</a>, որտեղ կգտնեք կարևոր տեղեկություններ և օգտակար խորհուրդներ՝ WordPress կայքեր ստեղծելու և հարմարեցնելու համար: Մենք կենտրոնանում ենք որակի, արագության և օգտագործման հարմարավետության վրա՝ օգնելով ձեզ իրականացնել ձեր նախագծերը:
+        `,
+        ru: `
+            Want WordPress websites? Visit our website, <a href="https://wordpressinfo.org" target="_blank">WordPressInfo.org</a>, where you'll find essential information and helpful tips for creating and customizing WordPress websites. We focus on quality, speed, and ease of use to help you get your projects off the ground.
+        `,
+        en: `
+            Хотите сайты WordPress? Посетите наш сайт <a href="https://wordpressinfo.org" target="_blank">WordPressInfo.org</a>, где вы найдете важную информацию и полезные советы по созданию и настройке сайтов WordPress. Мы делаем ставку на качество, скорость и простоту использования, чтобы помочь вам запустить ваши проекты.
+        `
+    },
 ]
 
 

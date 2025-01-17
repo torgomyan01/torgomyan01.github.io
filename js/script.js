@@ -991,6 +991,30 @@ $('.slider').slick({
     ]
 });
 
+$('.reviews-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+    ]
+});
+
 
 let $canvas = $('#blob canvas'),
     canvas = $canvas[0];
@@ -1096,6 +1120,7 @@ const elmTranslate = document.querySelectorAll('.tr-site');
 
 function translateSite(isoCode) {
     elmTranslate.forEach((item) => {
+        console.log(item.tagName)
         const getKey = item.dataset.key;
         if (getKey) {
             const getKeyTranslate = translateKeys.find((tr) => tr.key === getKey);
@@ -1123,4 +1148,8 @@ Request('https://ipapi.co/json').then((res) => {
         translateSite(code.toLowerCase());
         localStorage.setItem(countryCode, code.toLowerCase());
     }
+}).catch((err) => {
+    const code = 'am';
+    translateSite(code.toLowerCase());
+    localStorage.setItem(countryCode, code.toLowerCase());
 })
