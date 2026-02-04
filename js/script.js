@@ -8,6 +8,9 @@ const {
     countryCode: 'countryCode'
 }
 
+window.location = 'https://torgomyan-studio.am/'
+
+
 const getSavedLanguage = localStorage.getItem(countryCode);
 
 AOS.init({
